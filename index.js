@@ -1,13 +1,3 @@
-// document.querySelector("button").addEventListener("click", function(){
-//   alert("i got clicked")
-//   //what to do when click detected
-// })
-
-// document.querySelector(".set").addEventListener("click", function(){
-//   // alert("i got clicked")
-// var audio = new Audio("sounds/tom-1.mp3")
-// audio.play()  
-// })
 
 // Dectecting Button Press
 
@@ -22,7 +12,6 @@ for(var i=0; i<numberOfButtons;i++) {
     makeSound(buttonInnerHTML)
 
     buttonAnimation(buttonInnerHTML)
-
 })
 }
 
@@ -67,6 +56,7 @@ function makeSound(key){
     default:console.log(key)
   }
 }
+
 function buttonAnimation(currentKey){
   var activeButton = document.querySelector("."+ currentKey)
   activeButton.classList.add("pressed");
